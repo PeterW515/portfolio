@@ -1,3 +1,96 @@
-h1 {
-    font-size: 90px;
+:root {
+    --background: #25274D;
+    --primary-text: #FFFFFF;
+    --secondary-text: #2E9CCA;
+
+}
+
+html {
+    /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+    font-size: 62.5%;
+  }
+
+body {
+  /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color: var(--primary-text);
+  background-color: var(--background);
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height:100px;
+}
+
+
+.name {
+    
+    flex: 8;
+    background-color: var(--secondary-text);
+    color: var(--background);
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 0px 20px 20px 0px;
+    
+
+}
+
+.nav-links {
+    
+    flex: 15;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:flex-end;
+    justify-content: flex-end;
+    color: var(--secondary-text);
+    font-size: 30px;
+    
+    
+}
+
+nav {
+    
+    border-bottom: 5px solid var(--secondary-text);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    
+}
+
+figure {
+    height: 400px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url(https://via.placeholder.com/400);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+figure section {
+    background-color: var(--secondary-text);
+    padding: 15px 30px 40px 30px;
+    height: 50px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    font-size: 50px;
+    align-items: center;
 }
