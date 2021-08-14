@@ -6,14 +6,24 @@ html {
   border-radius: 50px;
 }
 
+.card .card-title {
+  font-size: 42px;
+}
+
+.card .card-content p {
+  font-size: 24px;
+  padding-top: 50px;
+  line-height: 40px;
+}
+
 .parallax-container {
-  height: 750px;
+  height: 500px;
 }
 
 
 @media screen and (max-width: 992px) {
   .parallax-container {
-    height: 500px;
+    height: 400px;
   }
 }
 
