@@ -2,3 +2,23 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+.card.small {
+  border-radius: 50px;
+}
+
+.parallax-container {
+  height: 750px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .parallax-container {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .parallax-container {
+    height: 250px;
+  }
+}
