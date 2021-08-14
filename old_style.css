@@ -1,0 +1,199 @@
+/*set color variables for page*/
+:root {
+  --background: #25274d;
+  --primary-text: #ffffff;
+  --secondary-text: #2e9cca;
+}
+
+/*code selection from class example to standardize font size*/
+html {
+  font-size: 62.5%;
+}
+
+/*code selection from class example to set font for page, font size, line height, and colors*/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color: var(--primary-text);
+  background-color: var(--background);
+}
+
+/*header formatting including flex setup*/
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 100px;
+}
+
+/*name class for displaying my name plus formatting and flex setup*/
+.name {
+  flex: 15;
+  background-color: var(--secondary-text);
+  color: var(--background);
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  font-size: 60px;
+  font-weight: bold;
+  border-radius: 0px 20px 20px 0px;
+  padding-right: 5px;
+}
+
+/*Navigation links section at top*/
+.nav-links {
+  flex: 15;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: var(--secondary-text);
+  font-size: 30px;
+}
+
+/*Nav links formatting*/
+nav {
+  border-bottom: 5px solid var(--secondary-text);
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/*Cover image*/
+figure {
+  height: 600px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url(https://via.placeholder.com/1600?text=Placeholder+for+cover+image);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/*cover image text box*/
+figure section {
+  background-color: var(--secondary-text);
+  padding: 15px 30px 40px 30px;
+  height: 50px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  font-size: 50px;
+  align-items: center;
+}
+
+/*main section formatting*/
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*formatting for each section in main (about, work, contact)*/
+main article {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px;
+}
+
+/*left side formatting*/
+.left-panel-header {
+  height: 200px;
+  font-size: 60px;
+  color: var(--secondary-text);
+  flex: 2;
+  text-align: right;
+  line-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/*primary content formatting*/
+.right-panel-text {
+  flex: 10;
+  margin: 10px;
+  padding: 10px;
+  border-left: 3px solid var(--secondary-text);
+}
+
+/*card formatting for work section*/
+.work-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*largest card*/
+.card-main {
+  height: 300px;
+  width: 99%;
+  border: 3px solid var(--secondary-text);
+  margin: 0 1% 10px 0;
+  background-image: url(https://via.placeholder.com/1600?text=Placeholder+for+application+image);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+/*other cards*/
+.card {
+  height: 300px;
+  width: 49%;
+  margin: 0 1% 10px 0;
+  background-image: url(https://via.placeholder.com/800?text=Placeholder+for+application+image);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+/*card text boxes*/
+.card section,
+.card-main section {
+  background-color: var(--secondary-text);
+  padding: 20px 30px 30px 30px;
+  height: 40px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  font-size: 30px;
+  align-items: center;
+}
+
+/*list formatting for contact*/
+ul {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: center;
+  color: var(--secondary-text);
+  font-size: 25px;
+  text-align: center;
+}
+
+/*list item formatting*/
+li {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  flex: 1;
+  color: var(--primary-text);
+  border-bottom: 3px solid var(--secondary-text);
+}
+
+/*link formatting*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
