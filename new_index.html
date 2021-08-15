@@ -22,109 +22,231 @@
 
 <body>
     <header>
-        <nav>
-            <div class="nav-wrapper grey darken-3">
-                <a href="#" class="brand-logo">My Portfolio</a>
-                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#work">My Work</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper grey darken-3">
+                    <a href="#" class="brand-logo">My Portfolio</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#work">My Work</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
         <ul class="sidenav" id="mobile-nav">
             <li><a href="#about">About Me</a></li>
             <li><a href="#work">My Work</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact Me</a></li>
         </ul>
     </header>
 
     <main class="">
-        <div class="section white">
-            <div class="row container">
-                <h2 class="header center-align">Peter Weigman's Portfolio</h2>
-                <h6 class="grey-text text-darken-1 center-align">Welcome to my portfolio. The images below are
-                    screenshots from some of my work. Please scroll through while learning more about me!</h6>
+        <div class="overlay-content">
+            <div class="parallax-container">
+                <div class="parallax" style="background-image: url(assets/code_sample.png)">
+                </div>
+                <div class="overlay-text" style="width: 75%; min-width: 350px;">
+                    <h1 class="white-text">Peter Weigman's Portfolio</h1>
+                    <a class="waves-effect waves-light btn" href="#infoAboutMe" id="enter">Enter</a>
+                </div>
             </div>
         </div>
-        <div class="parallax-container">
-            <div class="parallax">
-                <img class="responsive-img" src="assets/code_sample.png">
-            </div>
+
+        <div class="carousel" id="infoAboutMe">
+            <a class="carousel-item grey darken-2 grey-text text-lighten-5" href="#about">About Me</a>
+            <a class="carousel-item grey darken-2 grey-text text-lighten-5" href="#work">My Work</a>
+            <a class="carousel-item grey darken-2 grey-text text-lighten-5" href="#contact">Contact Me</a>
         </div>
-        <div class="section white container" id="about">
+
+        <div class="row container hide" id="myWork">
             <div class="row">
-                <div class="col s12 center-align">
-                    <div class="card small grey darken-1 z-depth-5">
-                        <div class="card-content white-text">
-                            <span class="card-title">My Background</span>
-                            <p>Ater graduating from Clemson University in 2018, I began working for Manhattan
-                                Associates, a supply chain software company. As a consultant and then business
-                                analyst, I worked on the functional side of the software. Around the middle of 2020,
-                                I began to think I wanted to move in to more technical work.</p>
+
+                <div class="col s12 m6 l4">
+                    <div class="card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/fos_coffee_shop.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://fos-coffee-shop.herokuapp.com/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/fos-coffee-shop" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/weather_dashboard.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://peterw515.github.io/GT6-Weather-Dashboard/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT6-Weather-Dashboard" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/tech_blog.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://gt14-mvc-tech-blog.herokuapp.com/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT14-MVC-Tech-Blog" target="_blank">Repository</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="parallax-container">
-            <div class="parallax container"><img class="responsive-img" src="assets/tech_blog.png"></div>
-        </div>
-        <div class="section white container">
+
             <div class="row">
-                <div class="col s12 center-align">
-                    <div class="card small grey darken-1 z-depth-5">
-                        <div class="card-content white-text">
-                            <span class="card-title">The Spark</span>
-                            <p>I thought a good first step (and trial run) into
-                                programming would be to learn Java and take Oracle's certification exam. I passed and became an
-                                Oracle Certified Associate, Java SE 8 Programmer.</p>
+
+                <div class="col s12 m6 l4">
+                    <div class="card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/note_taker.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://peter-gt11-note-taker.herokuapp.com/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT11-Note-Taker" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/code_quiz.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://peterw515.github.io/GT4-code-quiz/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT4-code-quiz" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/password_gen.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://peterw515.github.io/GT3-password-generator/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT3-password-generator" target="_blank">Repository</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="parallax-container">
-            <div class="parallax container"><img class="responsive-img" src="assets/note_taker.png"></div>
-        </div>
-        <div class="section white container">
+
+
+
+        <div class="row container" id="other">
             <div class="row">
-                <div class="col s12 center-align">
-                    <div class="card small grey darken-1 z-depth-5">
-                        <div class="card-content white-text">
-                            <span class="card-title">My Development Experience</span>
-                            <p>After the Java certification, I enrolled in the Georgia
-                                Tech Full Stack Coding Bootcamp in the beginning of 2021. This rigorous program teaches the
-                                fundamentals of HTML, CSS, and Javascript and then quickly accelerates into API development,
-                                Node.js, OOP basics, servers, Express, SQL, MVC, Progressive Web Apps, React, and many other
-                                frameworks, libraries, and packages.</p>
+
+                <div class="col s12 m6 l4">
+                    <div class="card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/fos_coffee_shop.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://fos-coffee-shop.herokuapp.com/" target="_blank">Sdfsdfite</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/fos-coffee-shop" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/weather_dashboard.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://peterw515.github.io/GT6-Weather-Dashboard/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT6-Weather-Dashboard" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/tech_blog.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://gt14-mvc-tech-blog.herokuapp.com/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT14-MVC-Tech-Blog" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col s12 m6 l4">
+                    <div class="card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/note_taker.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://peter-gt11-note-taker.herokuapp.com/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT11-Note-Taker" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/code_quiz.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://peterw515.github.io/GT4-code-quiz/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT4-code-quiz" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/password_gen.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://peterw515.github.io/GT3-password-generator/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT3-password-generator" target="_blank">Repository</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="parallax-container container">
-            <div class="parallax"><img class="responsive-img" src="assets/fos_checkout.png"></div>
-        </div>
-                <div class="section white container">
-                    <div class="row">
-                        <div class="col s12 center-align">
-                            <div class="card small grey darken-1 z-depth-5">
-                                <div class="card-content white-text">
-                                    <span class="card-title">Future Goals</span>
-                                    <p>I've developed this portfolio with links to some of my projects, as well as my Github account. I hope to use this to showcase my work and launch my career as a full stack developer!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        <div class="parallax-container container">
-            <div class="parallax"><img class="responsive-img" src="assets/weather_dashboard.png"></div>
-        </div>
+
     </main>
 
 </body>
