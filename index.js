@@ -18,9 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.carousel');
   var options = {
-    'dist':-100,
-    'shift':-50,
-    'padding':150,
+    // 'dist':-100,
+    // 'shift':-50,
+    // 'padding':150,
+    'fullWidth':true,
     'indicators':true,
   }
   let instances = M.Carousel.init(elems,options);
@@ -40,17 +41,17 @@ enterBtn.addEventListener('click', function () {
   document.getElementById('other').classList.add('hide');
 })
 
-carElem.addEventListener('click', function() {
-  const carInstance = M.Carousel.getInstance(carElem);
+// carElem.addEventListener('click', function() {
+//   const carInstance = M.Carousel.getInstance(carElem);
 
-  while (carInstance.pressed || carInstance.dragged){
-    myWork.classList.add('hide');
-    other.classList.add('hide');
-  };
-  console.log(carInstance.center);
+//   while (carInstance.pressed || carInstance.dragged){
+//     myWork.classList.add('hide');
+//     other.classList.add('hide');
+//   };
+//   console.log(carInstance.center);
 
-  // console.log(carInstance.center);
-  // setTimeout(() => {
-  //   console.log(carInstance.center);
-  // },10000);
-})
+//   // console.log(carInstance.center);
+//   // setTimeout(() => {
+//   //   console.log(carInstance.center);
+//   // },10000);
+// })
