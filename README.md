@@ -1,2 +1,2 @@
-# portfolio
-This is my main portfolio. All of my best work is displayed on this page. 
+# Peter Weigman's Portfolio
+![image](https://user-images.githubusercontent.com/78565748/129656066-3870d866-2fe4-4c41-ad3e-03d32033444c.png)
