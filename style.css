@@ -3,6 +3,26 @@ html {
   scroll-behavior: smooth;
 }
 
+.section-100vh {
+  height: 100vh;
+}
+
+
+#myWork {
+  padding-top: 80px;
+}
+
+#about {
+  margin-top: 200px;
+  padding-top: 50px;
+
+}
+
+#contact {
+  margin-top: 100px;
+  padding-top: 50px;
+
+}
 
 .card .card-title {
   font-size: 42px;
@@ -40,6 +60,8 @@ html {
   transform: translate(-50%, -50%);
 }
 
+
+
 .btn {
   width: 200px;
   height: 50px;
@@ -58,18 +80,7 @@ html {
   box-shadow: 0 0 10px white;
 }
 
-.carousel .carousel-item {
-  width: 500px;
-}
 
-a.carousel-item {
-  border: 3px solid black;
-  border-radius: 15px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 60px;
-}
 
 .indicator-item {
   border: 2px solid black;
@@ -86,8 +97,5 @@ a.carousel-item {
   .parallax {
     background-position: 20%;
   }
-  .carousel .carousel-item {
-    width: 350px;
-    height: 150px;
-  }
+
 }

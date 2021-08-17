@@ -1,5 +1,5 @@
 const enterBtn = document.getElementById('enter');
-const carElem = document.getElementById('infoAboutMe');
+const carElem = document.getElementById('primary-carousel');
 const myWork = document.getElementById('myWork');
 const other = document.getElementById('other')
 
@@ -9,11 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var instances = M.Sidenav.init(elems);
 });
 
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   var elems = document.querySelectorAll('.parallax');
-//   var instances = M.Parallax.init(elems);
-// });
 
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.carousel');
@@ -25,6 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
     'indicators':true,
   }
   let instances = M.Carousel.init(elems,options);
+
+  // carElem.style.height = (window.innerHeight-64) + 'px';
+
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -33,25 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-enterBtn.addEventListener('click', function () {
-  const carInstance = M.Carousel.getInstance(carElem);
-  carInstance.set(1);
-
-  document.getElementById('myWork').classList.remove('hide');
-  document.getElementById('other').classList.add('hide');
-})
-
-// carElem.addEventListener('click', function() {
-//   const carInstance = M.Carousel.getInstance(carElem);
-
-//   while (carInstance.pressed || carInstance.dragged){
-//     myWork.classList.add('hide');
-//     other.classList.add('hide');
-//   };
-//   console.log(carInstance.center);
-
-//   // console.log(carInstance.center);
-//   // setTimeout(() => {
-//   //   console.log(carInstance.center);
-//   // },10000);
-// })
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.collapsible');
+  const options = {
+    'accordion':false,
+  }
+  var instances = M.Collapsible.init(elems, options);
+});

@@ -1,87 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter Weigman's Portfolio</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="old_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
 </head>
+
 <body>
-    <!--this is the header section and nav bar-->
     <header>
-        <section class="name">Peter Weigman's Portfolio</section>
-        <!--nav bar-->
-        <section class="nav-links">
-            <nav><a href="#about">About Me</a></nav>
-            <nav><a href="#work">Work</a></nav>
-            <nav><a href="#contact">Contact Me</a></nav>
-        </section>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper grey darken-3">
+                    <a href="#" class="brand-logo">My Portfolio</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#myWork">My Work</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="#myWork">My Work</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
     </header>
-    <!--Cover image-->
-    <figure>
-        <section>
-            Full Stack Developer
-        </section>
-    </figure>
-    <!--Main content including about, work, and contact info-->
-    <main>
-        <!--About section-->
-        <article>
-            <section class="left-panel-header" id="about">About Me</section>
-            <section class="right-panel-text">
-                <p>My name is Peter Weigman. I graduated from Clemson University with an Industrial Engineering degree,
-                    but have since been working to become a Full Stack Developer. I have experience with HTML, CSS, and
-                    Javascript. I am also enrolled in Georgia Tech's Coding Bootcamp, so I will be adding more
-                    technologies to the list over the next few months. This portfolio page is intended to showcase some
-                    of my work and demostrate my proficiency in different areas of web development. Please feel free to
-                    contact me about any of the projects shown below.</p>
-            </section>
-        </article>
-        <!--Work section-->
-        <article>
-            <section class="left-panel-header" id="work">Work</section>
-            <section class="right-panel-text work-cards">
-                <figure class="card-main">
-                    <section>
-                        Application 1
-                    </section>
-                </figure>
-                <figure class="card">
-                    <section>
-                        Application 2
-                    </section>
-                </figure>
-                <figure class="card">
-                    <section>
-                        Application 3
-                    </section>
-                </figure>
-                <figure class="card">
-                    <section>
-                        Application 4
-                    </section>
-                </figure>
-                <figure class="card">
-                    <section>
-                        Application 5
-                    </section>
-                </figure>
-            </section>
-        </article>
-        <!--Contact section-->
-        <article>
-            <section class="left-panel-header" id="contact">Contact Me</section>
-            <section class="right-panel-text">
-                <ul>
-                    <li>(410)-935-1176</li>
-                    <!--Purposely left email link off-->
-                    <li>phweigman@gmail.com</li>
-                    <li><a href="https://github.com/PeterW515" target="_blank">Github</a></li>
+
+    <main class="">
+        <div class="section-100vh">
+            <div class="overlay-content">
+                <div class="parallax-container">
+                    <div class="parallax" style="background-image: url(assets/code_sample.png)">
+                    </div>
+                    <div class="overlay-text" style="width: 75%; min-width: 350px;">
+                        <h1 class="white-text">Peter Weigman's Portfolio</h1>
+                        <a class="waves-effect waves-light btn" href="#myWork" id="enter">Enter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row container section section-100vh" id="myWork">
+            <div class="row center-align">
+                <h2><i class="small material-icons">work</i>My Work<i class="small material-icons">work</i></h2>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="small card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/fos_coffee_shop.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://fos-coffee-shop.herokuapp.com/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/fos-coffee-shop" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6">
+                    <div class="small card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/weather_dashboard.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://peterw515.github.io/GT6-Weather-Dashboard/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT6-Weather-Dashboard" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6">
+                    <div class="small card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/tech_blog.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://gt14-mvc-tech-blog.herokuapp.com/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT14-MVC-Tech-Blog" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col s12 m6">
+                    <div class="small card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/note_taker.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://peter-gt11-note-taker.herokuapp.com/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT11-Note-Taker" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6">
+                    <div class="small card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/code_quiz.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://peterw515.github.io/GT4-code-quiz/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT4-code-quiz" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6">
+                    <div class="small card z-depth-5">
+                        <div class="card-image">
+                            <img class="materialboxed" width="300" src="assets/password_gen.png">
+                        </div>
+                        <div class="card-action center-align">
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://peterw515.github.io/GT3-password-generator/" target="_blank">Site</a>
+                            <a class="waves-effect waves-light black-text blue-grey btn"
+                                href="https://github.com/PeterW515/GT3-password-generator"
+                                target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row container section section-100vh clearfix" id="about">
+            <div class="row center-align">
+                <h2><i class="small material-icons">person</i>About Me<i class="small material-icons">person</i></h2>
+            </div>
+            <div class="row">
+                <ul class="collapsible">
+                    <li class="active">
+                        <div class="collapsible-header">
+                            <h5><i class="material-icons">history</i>My Background</h5>
+                        </div>
+                        <div class="collapsible-body"><span>Ater graduating from Clemson University in 2018, I began
+                                working for Manhattan
+                                Associates, a supply chain software company. As a consultant and then business
+                                analyst, I worked on the functional side of the software. Around the middle of 2020,
+                                I began to think I wanted to move in to more technical work.</span></div>
+                    </li>
+                    <li class="active">
+                        <div class="collapsible-header">
+                            <h5><i class="material-icons">date_range</i>Current Experience</h5>
+                        </div>
+                        <div class="collapsible-body"><span>After making that decision, I enrolled in the Georgia
+                                Tech Full Stack Coding Bootcamp in the beginning of 2021. This rigorous program teaches
+                                the
+                                fundamentals of HTML, CSS, and Javascript and then quickly accelerates into API
+                                development,
+                                Node.js, OOP basics, servers, Express, SQL, MVC, Progressive Web Apps, React, and many
+                                other
+                                frameworks, libraries, and packages.</span></div>
+                    </li>
+                    <li class="active">
+                        <div class="collapsible-header">
+                            <h5><i class="material-icons">forward</i>Future Goals</h5>
+                        </div>
+                        <div class="collapsible-body"><span>I've developed this portfolio with links to some of my
+                                projects, as well as my Github
+                                account. I hope to use this to showcase my work and launch my career as a full stack
+                                developer!</span></div>
+                    </li>
                 </ul>
-            </section>
-        </article>
+            </div>
+        </div>
+        <div class="row container section section-100vh clearfix" id="contact">
+            <div class="row center-align">
+                <h2><i class="small material-icons">email</i>Contact Me<i class="small material-icons">email</i></h2>
+            </div>
+            <div class="row">
+                <div class="collection center-align">
+                    <a href="mailto:phweigman@gmail.com" class="collection-item black-text">Email</a>
+                    <a href="https://github.com/PeterW515" class="collection-item black-text" target="_blank">Github</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        </div>
+
+
     </main>
+
 </body>
+
 </html>
